@@ -42,5 +42,29 @@ const portfolioProjects = [
 ];
 
 export const ProjectsSection = () => {
-  return <div>Projects Section</div>;
+  return (
+    <div>
+      <div className="container">
+        <p>Real-world Results</p>
+        <h2>Featured Projects</h2>
+        <p>See how I transformed concepts into user-friendly solutions.</p>
+        <div>
+          {portfolioProjects.map((project) => (
+            <div key={project.title}>
+              <div>
+                <span>{project.company}</span>
+                <span>{project.year}</span>
+              </div>
+              <h3>{project.title}</h3>
+              <ul>
+                {project.results.map((result) => {
+                  <li>{result.title}</li>;
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
