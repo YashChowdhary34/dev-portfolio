@@ -21,25 +21,25 @@ export const HeroSection = () => {
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
         <HeroOrbit size={800} rotation={-70}>
-          <StarIcon classname="size-28 text-red-300" />
+          <StarIcon className="size-28 text-red-300" />
         </HeroOrbit>
         <HeroOrbit size={550} rotation={20}>
-          <StarIcon classname="size-12 text-red-300" />
+          <StarIcon className="size-12 text-red-300" />
         </HeroOrbit>
         <HeroOrbit size={590} rotation={95}>
-          <StarIcon classname="size-8 text-red-300" />
+          <StarIcon className="size-8 text-red-300" />
         </HeroOrbit>
         <HeroOrbit size={430} rotation={-15}>
-          <SparkleIcon classname="size-8 text-red-300/20" />
+          <SparkleIcon className="size-8 text-red-300/20" />
         </HeroOrbit>
         <HeroOrbit size={440} rotation={-80}>
-          <SparkleIcon classname="size-5 text-red-300/20" />
+          <SparkleIcon className="size-5 text-red-300/20" />
         </HeroOrbit>
         <HeroOrbit size={530} rotation={180}>
-          <SparkleIcon classname="size-10 text-red-300/20" />
+          <SparkleIcon className="size-10 text-red-300/20" />
         </HeroOrbit>
         <HeroOrbit size={710} rotation={140}>
-          <SparkleIcon classname="size-14 text-red-300/20" />
+          <SparkleIcon className="size-14 text-red-300/20" />
         </HeroOrbit>
         <HeroOrbit size={720} rotation={0}>
           <div className="size-3 rounded-full bg-red-300/20"></div>
@@ -47,8 +47,11 @@ export const HeroSection = () => {
         <HeroOrbit size={520} rotation={80}>
           <div className="size-2 rounded-full bg-red-300/20"></div>
         </HeroOrbit>
-        <HeroOrbit size={650} rotation={-5}>
+        <HeroOrbit size={650} rotation={-50}>
           <div className="size-2 rounded-full bg-red-300/20"></div>
+        </HeroOrbit>
+        <HeroOrbit size={720} rotation={190}>
+          <div className="size-3 rounded-full bg-red-300/20"></div>
         </HeroOrbit>
       </div>
       <div className="container">
@@ -59,7 +62,9 @@ export const HeroSection = () => {
             className="size-[100px]"
           />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-500 size-2.5 rounded-full"></div>
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping"></div>
+            </div>
             <div className="text-sm font-medium">
               Available for new projects
             </div>
