@@ -12,6 +12,10 @@ const words = [
   "C++",
   "R",
   "MongoDB",
+  "Git",
+  "GitHub",
+  "React Native",
+  "Scikit-Learn",
 ];
 
 export const TapeSection = () => {
